@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(to bottom, #595959 23%, #1e1e1e 95%);
+  background: linear-gradient(to bottom, #272727 23%, #151515 95%);
 }
 .header {
   position: fixed;
