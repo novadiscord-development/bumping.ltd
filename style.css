@@ -100,5 +100,15 @@ body {
 
 /* Media queries */
 @media screen and (max-width: 1023px) {
-    /* Add your responsive styles here */
+    .navbar {
+        padding: 15px 10px;
+    }
+
+    .navbar .logo a {
+        font-size: 1.5rem;
+    }
+
+    .navbar .links {
+        display: none;
+    }
 }
