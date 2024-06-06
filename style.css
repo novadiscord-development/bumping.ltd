@@ -1,231 +1,105 @@
 /* Importing Google font - Open Sans */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
+/* Reset styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Base styles */
 body {
-  height: 100vh;
-  width: 100%;
-  background: linear-gradient(to bottom, #272727 23%, #151515 95%);
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #272727 23%, #151515 95%);
 }
 
+/* Header styles */
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
 }
 
 .navbar .logo a {
-  font-size: 1.8rem;
-  text-decoration: none;
-  color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
 }
 
 .navbar .links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 35px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
 }
 
 .navbar .links a {
-  font-weight: 500;
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 0;
-  transition: 0.2s ease;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.2s ease;
 }
 
 .navbar .links a:hover {
-  color: #47b2e4;
+    color: #47b2e4;
 }
 
-.navbar .buttons a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-  padding: 15px 0;
-  transition: 0.2s ease;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.375rem;
-  background: linear-gradient(135deg, #32dede, #1488cc);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+/* Button animation with animate-gradient__rotate style */
+.button-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Ensure the gradient animation stays within the button */
 }
 
-.navbar .buttons a:not(:last-child) {
-  margin-right: 30px;
-}
-
-.navbar .buttons .signin:hover {
-  color: #47b2e4;
-}
-
-.navbar .buttons .signup:hover {
-  background: linear-gradient(135deg, #47b2e4, #1488cc);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.hero-section {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 95vh;
-  padding: 0 15px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.hero-section .hero {
-  max-width: 50%;
-  color: #fff;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #c9c7c7;
-}
-
-.hero-section .img img {
-  width: 517px;
-}
-
-.hero-section .buttons {
-  margin-top: 40px;
-}
-
-.hero-section .buttons a {
-  text-decoration: none;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 0.375rem;
-  font-weight: 600;
-  transition: 0.2s ease;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-section .buttons a:not(:last-child) {
-  margin-right: 15px;
-}
-
-.buttons .join {
-  background-color: #47b2e4;
-}
-
-.hero-section .buttons .learn {
-  border: 1px solid #fff;
-  border-radius: 0.375rem;
-}
-
-.hero-section .buttons a:hover {
-  background-color: #47b2e4;
-}
-
-.hero-section .buttons a::before,
-.hero-section .buttons a::after {
-  content: '';
-  position: absolute;
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  top: -2px;
-  left: -2px;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-  animation: animateBorder 2s linear infinite;
-  z-index: -1;
-}
-
-.hero-section .buttons a::after {
-  animation-delay: 1s;
-}
-
-@keyframes animateBorder {
-  0% {
-    transform: translate(-100%, -100%);
-  }
-  50% {
-    transform: translate(100%, 100%);
-  }
-  100% {
-    transform: translate(-100%, -100%);
-  }
-}
-
-.hero-section .buttons a:hover::before,
-.hero-section .buttons a:hover::after {
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
-}
-
-/* Hamburger menu styles */
-#menu-toggle {
-  display: none;
-}
-
-#hamburger-btn {
-  font-size: 1.8rem;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-  order: 1;
-}
-
-@media screen and (max-width: 1023px) {
-  .navbar .logo a {
-    font-size: 1.5rem;
-  }
-
-  .links {
-    position: fixed;
-    left: -100%;
-    top: 75px;
-    width: 100%;
-    height: 100vh;
-    padding-top: 50px;
-    background: #175d69;
-    flex-direction: column;
-    transition: 0.3s ease;
-  }
-
-  .navbar #menu-toggle:checked ~ .links {
+.button-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
     left: 0;
-  }
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(from 180deg at 50% 50%, #1c64f2 0deg, #4a8af2 10deg, #1c64f2 25deg, #436ef2 112.5deg, #3b75f2 203.75deg, #6d91f2 213.75deg, #3b75f2 228.75deg, rgba(28, 100, 242, 0) 1turn);
+    z-index: -1;
+    padding: 1.5px; /* Adjust padding as needed */
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .2s;
+    border-radius: inherit;
+}
 
-  .navbar #hamburger-btn {
-    display: block;
-  }
+.button-container:hover::before {
+    transform: rotate(360deg);
+}
 
-  .header .buttons {
-    display: none;
-  }
+.button-text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-  .hero-section .hero {
-    max-width: 100%;
-    text-align: center;
-  }
+/* Footer styles */
+/* Add your footer styles here */
 
-  .hero-section img {
-    display: none;
-  }
+/* Media queries */
+@media screen and (max-width: 1023px) {
+    /* Add your responsive styles here */
 }
