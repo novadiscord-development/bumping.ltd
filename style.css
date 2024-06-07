@@ -21,6 +21,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .navbar {
@@ -143,7 +144,6 @@ body {
     font-weight: 600;
     transition: 0.2s ease;
     display: inline-block;
-    margin-right: 15px;
 }
 
 .hero-section .buttons a:not(:last-child) {
@@ -151,7 +151,7 @@ body {
 }
 
 .buttons .join {
-    background-color: #47b2e4;
+    background-color: #04adfb;
 }
 
 .hero-section .buttons .learn {
@@ -177,26 +177,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-logo img {
-    width: 100px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
 }
 
 .footer .footer-sections {
     display: flex;
     gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer .footer-section {
-    text-align: left;
+    text-align: center;
+    flex: 1;
+    min-width: 200px; /* Ensure sections have a minimum width */
 }
 
 .footer .footer-section h3 {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: bold;
-    text-align: center;
 }
 
 .footer .links,
@@ -215,6 +219,20 @@ body {
 .footer .links a:hover,
 .footer .legal a:hover {
     color: #47b2e4;
+}
+.footer .links,
+.footer .legal {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+/* Hide footer on small screens */
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
 }
 
 /* Hamburger menu styles */
