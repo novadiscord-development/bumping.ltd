@@ -131,7 +131,7 @@ body {
   width: 200%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-  animation: animateBorder 4s linear infinite;
+  animation: animateBorder 4s ease-in-out infinite;
   z-index: -1;
 }
 
@@ -143,7 +143,7 @@ body {
     left: 100%;
   }
   50.01% {
-    left: -100%;
+    left: 100%;
   }
   100% {
     left: 100%;
