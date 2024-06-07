@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            background-color: #1e1f2b;
-            color: white;
+        .error-page {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
             text-align: center;
         }
         .error-code {
@@ -24,17 +21,6 @@
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            margin: 0.5em 0;
-        }
-        h3 {
-            font-size: 3em; /* Larger than the "404" text */
-            margin: 0.5em 0;
-            font-weight: bold;
-            color: white;
-        }
-        p {
-            font-size: 1em;
-            color: #d3d3d3;
             margin: 0.5em 0;
         }
         .button {
@@ -53,8 +39,11 @@
     </style>
 </head>
 <body>
-    <p class="text-base font-semibold text-highlight-txt">404</p>
-    <h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">Error</h1>
-    <p class="mt-6 text-base leading-7 text-gray-400">Looks like you &#x27;re lost somewhere.</p>
+    <div class="error-page">
+        <p class="error-code text-base font-semibold text-highlight-txt">404</p>
+        <h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">Error</h1>
+        <p class="mt-6 text-base leading-7 text-gray-400">Uh Oh! It appears you got lost.</p>
+        <a href="/" class="button">Take Me Home</a>
+    </div>
 </body>
 </html>
