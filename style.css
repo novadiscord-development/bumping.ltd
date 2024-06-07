@@ -185,12 +185,13 @@ body {
 }
 
 .footer .footer-logo img {
-  width: 70px; /* Adjust as needed */
+  width: 150px; /* Adjust as needed */
 }
 
 .footer .footer-sections {
   display: flex;
-  gap: 50px; /* Adjust as needed */
+  align-items: center;
+  gap: 100px; /* Adjust as needed */
 }
 
 .footer .footer-section {
