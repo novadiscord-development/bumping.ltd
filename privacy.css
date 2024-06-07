@@ -14,10 +14,17 @@ body {
 }
 
 /* Privacy Policy page styles */
-.privacy-container {
-    max-width: 800px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.privacy-container {
+    margin-top: 80px; /* Adjust as needed */
     padding: 20px;
+    background-color: #272727;
+    border-radius: 10px;
 }
 
 .privacy-container h1 {
@@ -40,8 +47,8 @@ body {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 10px;
-    color: #fff; /* Apply text color from global styles */
 }
+
 
 .footer {
     background: #111;
