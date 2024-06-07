@@ -126,27 +126,22 @@ body {
 .hero-section .buttons a::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: -200%;
-  width: 200%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300%;
+  height: 300%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-  animation: animateBorder 4s ease-in-out infinite;
+  animation: spinBorder 4s linear infinite;
   z-index: -1;
 }
 
-@keyframes animateBorder {
+@keyframes spinBorder {
   0% {
-    left: -200%;
-  }
-  50% {
-    left: 100%;
-  }
-  51% {
-    left: 100%;
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    left: 100%;
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
