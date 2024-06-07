@@ -161,8 +161,10 @@ body {
   transition: transform 4s linear infinite;
 }
 
-.hero-section .buttons a:hover::before {
-  animation: none;
+/* Adjust the size of the rotating border */
+.hero-section .buttons a::before {
+  width: 150%;
+  height: 150%;
 }
 
 /* Footer styles */
