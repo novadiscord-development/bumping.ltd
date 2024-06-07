@@ -1,5 +1,6 @@
 /* Importing Google font - Open Sans */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +53,50 @@ body {
 
 .navbar .links a:hover {
   color: #47b2e4;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: #7a7b7c;
+    flex-direction: column;
+    transition: 0.8s ease;
+  }
+  .navbar #menu-toggle:checked ~ .links {
+    left: 0;
+  }
+  .navbar #hamburger-btn {
+    display: block;
+  }
+  .header .buttons {
+    display: none;
+  }
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-section img {
+    display: none;
+  }
 }
 
 .hero-section {
@@ -161,6 +206,8 @@ body {
 .footer .footer-section h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .footer .links,
@@ -179,4 +226,17 @@ body {
 .footer .links a:hover,
 .footer .legal a:hover {
   color: #47b2e4;
+}
+
+/* Hamburger menu styles */
+#menu-toggle {
+  display: none;
+}
+
+#hamburger-btn {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  order: 1;
 }
