@@ -185,7 +185,7 @@ body {
 }
 
 .footer .footer-logo img {
-  width: 50px; /* Adjust as needed */
+  width: 70px; /* Adjust as needed */
 }
 
 .footer .footer-sections {
@@ -194,7 +194,8 @@ body {
 }
 
 .footer .footer-section {
-  text-align: left;
+  text-align: center; /* Align text in the center */
+  flex: 1; /* Equal width */
 }
 
 .footer .footer-section h3 {
