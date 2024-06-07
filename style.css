@@ -127,7 +127,7 @@ body {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
+  left: -200%;
   width: 200%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
@@ -137,7 +137,7 @@ body {
 
 @keyframes animateBorder {
   0% {
-    left: -100%;
+    left: -200%;
   }
   50% {
     left: 100%;
