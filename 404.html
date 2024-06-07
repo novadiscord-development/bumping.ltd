@@ -6,7 +6,7 @@
     <title>404 - Page Not Found</title>
     <style>
         body {
-            background-color: #343434;
+            background-color: #808080;
             color: white;
             display: flex;
             flex-direction: column;
@@ -17,32 +17,45 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
+        .error-code {
+            font-size: 4em;
+            font-weight: bold;
+            background: linear-gradient(left, #00f, #00c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin: 0.5em 0;
+        }
         h3 {
             font-size: 2em;
             margin: 0.5em 0;
+            font-weight: bold;
+            color: white;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1em;
+            color: #d3d3d3;
             margin: 0.5em 0;
         }
         .button {
             padding: 0.5em 1em;
             font-size: 1em;
             color: white;
-            background-color: #2d658d;
+            background-color: #1E90FF;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             margin-top: 1em;
         }
         .button:hover {
-            background-color: #555;
+            background-color: #1C86EE;
         }
     </style>
 </head>
 <body>
+    <div class="error-code">404</div>
     <h3>Error</h3>
     <p>Uh Oh! It appears you got lost.</p>
-    <a href="/" class="button">Go Home</a>
+    <a href="/" class="button">Take Me Home</a>
 </body>
 </html>
