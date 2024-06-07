@@ -150,7 +150,8 @@ body {
 }
 .footer .footer-sections {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px; /* Adjust the gap between the sections */
 }
 .footer .links,
 .footer .legal {
@@ -166,9 +167,6 @@ body {
 .footer .links a:hover,
 .footer .legal a:hover {
   color: #47b2e4;
-}
-.footer .footer-section {
-  margin-bottom: 20px;
 }
 .footer .footer-section h3 {
   margin-bottom: 10px;
