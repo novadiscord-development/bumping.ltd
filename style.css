@@ -132,17 +132,7 @@ body {
   width: 300%;
   height: 300%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
-  animation: spinBorder 4s linear infinite;
   z-index: -1;
-}
-
-@keyframes spinBorder {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
 
 .hero-section .buttons a:hover::before {
