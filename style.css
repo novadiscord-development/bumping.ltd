@@ -173,15 +173,15 @@ body {
   padding: 0 15px;
 }
 
+.footer-logo {
+  margin-right: auto;
+}
+
 .footer .footer-sections {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
-}
-
-.footer-logo {
-  margin-right: auto;
 }
 
 .footer .footer-section {
