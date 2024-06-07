@@ -122,7 +122,6 @@ body {
 .hero-section .buttons a:hover {
   background-color: #47b2e4;
 }
-
 .hero-section .buttons a::before {
   content: '';
   position: absolute;
@@ -134,11 +133,9 @@ body {
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
   z-index: -1;
 }
-
 .hero-section .buttons a:hover::before {
   background: linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.5), transparent);
 }
-
 /* Footer styles */
 .footer {
   background: #111;
@@ -150,6 +147,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.footer .footer-sections {
+  display: flex;
+  justify-content: space-between;
 }
 .footer .links,
 .footer .legal {
@@ -173,7 +174,6 @@ body {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
-
 /* Hamburger menu styles */
 #menu-toggle {
   display: none;
