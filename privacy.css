@@ -94,7 +94,7 @@ body {
     }
 }
 
-/* Privacy Policy page styles */
+/* Page styles */
 .container {
     flex: 1;
     display: flex;
@@ -127,14 +127,34 @@ body {
 }
 
 .privacy-container ul {
-    list-style-type: square;
+    list-style-type: none;
     margin-left: 20px;
+    padding-left: 0;
 }
 
 .privacy-container ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.privacy-container ul li:before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #fff;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Footer styles */
