@@ -21,8 +21,8 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: #333;
-    padding: 10px 0;
+    background: transparent; /* Make header transparent */
+    padding: 20px 0; /* Add padding for better spacing */
 }
 
 .navbar {
@@ -136,35 +136,39 @@ body {
     margin-bottom: 10px;
 }
 
+/* Footer styles */
 .footer {
     background: #111;
     color: #fff;
     padding: 40px 0;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
 }
 
 .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-logo img {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 150px; /* Adjust as needed */
 }
 
-.footer-sections {
+.footer .footer-sections {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer .footer-section {
     text-align: center;
+    flex: 1;
+    min-width: 200px; /* Ensure sections have a minimum width */
 }
 
 .footer .footer-section h3 {
@@ -189,5 +193,32 @@ body {
 .footer .links a:hover,
 .footer .legal a:hover {
     color: #47b2e4;
-    text-decoration: underline; /* Maintain link styling */
+}
+
+.footer .links,
+.footer .legal {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+/* Hide footer on small screens */
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
+}
+
+/* Hamburger menu styles */
+#menu-toggle {
+    display: none;
+}
+
+#hamburger-btn {
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    order: 1;
 }
