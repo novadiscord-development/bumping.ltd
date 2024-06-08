@@ -148,7 +148,7 @@ body {
 }
 
 .privacy-container ul li span {
-    background: linear-gradient(45deg, #1e90ff, #0059a1);
+    background: linear-gradient(90deg, #1e90ff, #0073ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
