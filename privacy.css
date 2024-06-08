@@ -120,8 +120,9 @@ body {
 }
 
 .privacy-container p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.5;
+    color: rgb(102, 102, 102);
     margin-bottom: 15px;
 }
 
