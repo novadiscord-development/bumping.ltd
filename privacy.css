@@ -144,6 +144,10 @@ body {
     content: "-";
     position: absolute;
     left: 0;
+    color: #fff; /* Make the "-" white */
+}
+
+.privacy-container ul li span {
     background: linear-gradient(45deg, #1e90ff, #0059a1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
