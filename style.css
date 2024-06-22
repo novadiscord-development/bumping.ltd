@@ -356,17 +356,28 @@ body {
     order: 1;
 }
 
-/* Info Card Styles */
+/* Premium Plans Section */
+.premium-plans {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; /* Gap between info cards */
+    padding: 40px 15px; /* Adjusted padding */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .info-card {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.7); /* Transparent background */
     color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
-    text-align: center; /* Center align content */
-    gap: 25px;
+    text-align: center;
+    border: 1.5px solid #4355FF; /* Border color */
 }
 
 .info-card h3 {
@@ -376,9 +387,9 @@ body {
 }
 
 .info-card .perks {
-    font-size: 1rem; /* Smaller font size for perks */
+    font-size: 0.9rem; /* Smaller font size for perks */
     color: #a2a2a2; /* Light grey color for perks */
-    text-align: center; /* Left align perks list */
+    text-align: center;
     margin-top: 10px;
 }
 
@@ -393,10 +404,10 @@ body {
 
 .info-card .purchase-btn {
     display: inline-block;
-    background-color: #36b2ff; /* Light blue background */
-    color: #a6a6a6; /* Darker blue text color */
+    background-color: transparent; /* Transparent background */
+    color: #fff;
     padding: 12px 24px;
-    border: 2px solid #296ffb; /* Darker blue border */
+    border: 2px solid #4355FF; /* Border color */
     border-radius: 15px;
     text-decoration: none;
     font-weight: 600;
@@ -405,6 +416,6 @@ body {
 }
 
 .info-card .purchase-btn:hover {
-    background-color: #1c64f2; /* Darker blue background on hover */
+    background-color: rgba(67, 85, 255, 0.1); /* Semi-transparent background on hover */
     color: #fff; /* White text color on hover */
 }
