@@ -366,16 +366,17 @@ body {
     max-width: 400px;
     width: 100%;
     text-align: center; /* Center align content */
+    gap: 25px;
 }
 
 .info-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .info-card .perks {
-    font-size: 0.6rem; /* Smaller font size for perks */
+    font-size: 1rem; /* Smaller font size for perks */
     color: #a2a2a2; /* Light grey color for perks */
     text-align: center; /* Left align perks list */
     margin-top: 10px;
@@ -392,11 +393,11 @@ body {
 
 .info-card .purchase-btn {
     display: inline-block;
-    background-color: #4ab3f4; /* Light blue background */
-    color: #1c64f2; /* Darker blue text color */
+    background-color: #36b2ff; /* Light blue background */
+    color: #a6a6a6; /* Darker blue text color */
     padding: 12px 24px;
-    border: 2px solid #1c64f2; /* Darker blue border */
-    border-radius: 4px;
+    border: 2px solid #296ffb; /* Darker blue border */
+    border-radius: 15px;
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.2s, color 0.2s;
