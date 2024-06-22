@@ -1,16 +1,16 @@
-/* Global Reset and Base Styles */
-
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    height: 100%;
+    width: 100%;
     background: linear-gradient(to bottom, #272727 23%, #151515 95%);
     color: #fff;
-    height: 100vh;
 }
 
 /* Header Styles */
@@ -20,8 +20,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
     background-color: #111;
+    color: #fff;
+    z-index: 1000;
 }
 
 .navbar {
@@ -100,17 +101,15 @@ body {
 .premium-plans {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    gap: 30px;
     max-width: 1200px;
     margin: 100px auto;
-    gap: 20px;
     padding: 0 15px;
 }
 
 .info-card {
-    background-color: #fff;
-    color: #333;
+    background-color: rgba(51, 51, 51, 0.7);
+    color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -119,8 +118,16 @@ body {
 }
 
 .info-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     margin-bottom: 10px;
+}
+
+.info-card .perks {
+    font-size: 0.9rem;
+    color: #a2a2a2;
+    text-align: left;
+    margin-top: 10px;
 }
 
 .info-card .perks ul {
@@ -129,22 +136,25 @@ body {
 }
 
 .info-card .perks ul li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.purchase-btn {
+.info-card .purchase-btn {
     display: inline-block;
-    background-color: #47b2e4;
+    background-color: transparent;
     color: #fff;
+    padding: 12px 24px;
+    border: 2px solid #4355FF;
+    border-radius: 15px;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 20px;
 }
 
-.purchase-btn:hover {
-    background-color: #1c64f2;
+.info-card .purchase-btn:hover {
+    background-color: rgba(67, 85, 255, 0.1);
+    color: #fff;
 }
 
 /* Footer Styles */
@@ -167,7 +177,7 @@ body {
 }
 
 .footer-logo img {
-    width: 150px; /* Adjust as needed */
+    width: 150px;
 }
 
 .footer .footer-sections {
@@ -180,7 +190,7 @@ body {
 .footer .footer-section {
     text-align: center;
     flex: 1;
-    min-width: 200px; /* Ensure sections have a minimum width */
+    min-width: 200px;
 }
 
 .footer .footer-section h3 {
