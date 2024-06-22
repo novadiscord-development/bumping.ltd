@@ -7,7 +7,6 @@
 }
 
 /* Body Styles */
-
 body {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ body {
 }
 
 /* Header Styles */
-
 .header {
     position: fixed;
     top: 0;
@@ -100,7 +98,6 @@ body {
 }
 
 /* Premium Section Styles */
-
 .premium-plans {
     display: flex;
     justify-content: center;
@@ -122,7 +119,7 @@ body {
 }
 
 .info-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduced font size for title */
     margin-bottom: 10px;
 }
 
@@ -180,7 +177,7 @@ body {
 }
 
 .purchase-btn {
-    background-color: #04adfb; /* Blue button color */
+    background-color: rgba(255, 255, 255, 0.85); /* Transparent white */
     color: #fff;
     padding: 15px;
     border-radius: 5px;
@@ -196,7 +193,6 @@ body {
 }
 
 /* Footer Styles */
-
 .footer {
     background: #111;
     color: #fff;
