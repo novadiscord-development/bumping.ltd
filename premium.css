@@ -154,6 +154,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Align badge and title horizontally */
+    text-align: center;
 }
 
 .discount-badge {
