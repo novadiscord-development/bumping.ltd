@@ -1,65 +1,60 @@
-/* Reset CSS */
+/* Reset Styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
 }
 
-/* Body Styles */
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-    background: linear-gradient(to bottom, #272727 23%, #151515 95%);
-    color: #fff;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light background color */
 }
 
 /* Header Styles */
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent; /* Transparent background for header */
-    z-index: 1000;
+    background-color: #272727; /* Dark header background color */
+    color: #fff;
+    padding: 15px 0;
 }
 
 .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 15px;
+    padding: 0 15px;
 }
 
-.navbar .logo a {
-    font-size: 1.8rem;
-    text-decoration: none;
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo a {
     color: #fff;
+    text-decoration: none;
 }
 
-.navbar .links {
+.links {
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 35px;
+    gap: 20px;
 }
 
-.navbar .links a {
-    font-weight: 500;
-    text-decoration: none;
+.links li {
+    font-size: 1.1rem;
+}
+
+.links a {
     color: #fff;
-    padding: 10px 0;
-    transition: 0.2s ease;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.navbar .links a:hover {
-    color: #47b2e4;
+.links a:hover {
+    color: #04adfb; /* Hover color */
 }
 
 #menu-toggle {
@@ -67,198 +62,151 @@ body {
 }
 
 #hamburger-btn {
-    font-size: 1.8rem;
-    color: #fff;
     cursor: pointer;
     display: none;
 }
 
-@media screen and (max-width: 1023px) {
-    .navbar .logo a {
-        font-size: 1.5rem;
-    }
-    .links {
-        position: fixed;
-        left: -100%;
-        top: 75px;
-        width: 100%;
-        height: 100vh;
-        padding-top: 50px;
-        background: #7a7b7c;
+@media screen and (max-width: 768px) {
+    .navbar {
         flex-direction: column;
-        transition: 0.8s ease;
+        align-items: flex-start;
     }
-    .navbar #menu-toggle:checked ~ .links {
-        left: 0;
+
+    .links {
+        margin-top: 10px;
     }
-    .navbar #hamburger-btn {
+
+    #menu-toggle:checked + .navbar {
         display: block;
+        margin-top: 10px;
     }
-    .header .buttons {
+
+    #hamburger-btn {
+        display: block;
+        order: 1;
+    }
+
+    .links {
+        order: 3;
         display: none;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+    .links li {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .links a:hover {
+        color: #04adfb; /* Hover color */
     }
 }
 
-/* Premium Section Styles */
+/* Premium Plans Section */
 
 .premium-plans {
     display: flex;
     justify-content: center;
     gap: 30px;
     max-width: 1200px;
-    margin: 100px auto; /* Adjust margin as needed */
+    margin: 50px auto;
     padding: 0 15px;
 }
 
 .info-card {
-    background-color: #272727; /* Dark background color */
-    color: #fff;
+    background-color: #fff; /* Card background color */
+    color: #333; /* Card text color */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 10px); /* Adjusted width for three cards in a row */
+    width: calc(33.33% - 20px); /* Adjusted width for three cards in a row */
     text-align: center;
     position: relative;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
 
-.info-card .discount-badge {
-    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
-    color: #000;
-    font-weight: bold;
-    border-radius: 15px;
-    padding: 8px;
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+.info-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 .info-card h3 {
-    font-size: 1.2rem; /* Adjusted title font size */
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.info-card .price {
+.discount-badge {
+    background-color: #04adfb; /* Blue badge background color */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-left: 10px; /* Adjust spacing */
+}
+
+.price {
     font-size: 1.8rem;
     font-weight: bold;
     margin-top: 20px;
     display: block;
 }
 
-.info-card .price .price-large {
+.price-large {
     font-size: 2.5rem;
 }
 
-.info-card .price .price-small {
+.price-small {
     font-size: 0.8rem;
     color: #a2a2a2; /* Grey color */
 }
 
-.info-card .perks {
+.perks {
     text-align: left;
     margin-top: 20px;
 }
 
-.info-card .perks ul {
+.perks ul {
     list-style-type: none;
     padding: 0;
 }
 
-.info-card .perks li {
+.perks li {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
 
-.info-card .perks li img {
-    width: 15px; /* Adjust size of the blue dot */
-    height: 15px;
+.perks li img {
+    width: 10px; /* Adjust size of the blue dot */
+    height: 10px;
     margin-right: 10px;
 }
 
-.info-card .transparent-text {
-    color: rgba(255, 255, 255, 0.5); /* Semi-transparent grey color */
+.transparent-text {
+    color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey color */
 }
 
-.info-card .purchase-btn {
+.purchase-btn {
     background-color: #04adfb; /* Blue button color */
     color: #fff;
-    padding: 15px;
+    padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
-    display: block;
-    width: calc(100% - 10px); /* Span over the whole card with a small gap */
-    margin: 5px;
+    display: inline-block;
+    margin-top: 20px;
     transition: background-color 0.3s;
 }
 
-.info-card .purchase-btn:hover {
+.purchase-btn:hover {
     background-color: #47b2e4; /* Darker blue on hover */
-}
-
-/* Footer Styles */
-
-.footer {
-    background: #111;
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-logo img {
-    width: 150px;
-}
-
-.footer .footer-sections {
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.footer .footer-section {
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer .footer-section h3 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.footer .links,
-.footer .legal {
-    list-style: none;
-    padding: 0;
-}
-
-.footer .links a,
-.footer .legal a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.footer .links a:hover,
-.footer .legal a:hover {
-    color: #47b2e4;
-}
-
-/* Hide footer on small screens */
-@media screen and (max-width: 600px) {
-    .footer {
-        display: none;
-    }
 }
