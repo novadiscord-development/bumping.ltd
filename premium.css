@@ -128,8 +128,8 @@ body {
 }
 
 .info-card {
-    background-color: #fff; /* Card background color */
-    color: #333; /* Card text color */
+    background-color: #2e2e2e; /* Card background color */
+    color: #e5e5e5; /* Card text color */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -200,7 +200,7 @@ body {
 }
 
 .transparent-text {
-    color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey color */
+    color: rgba(140, 140, 140, 0.5); /* Semi-transparent grey color */
 }
 
 .purchase-btn {
