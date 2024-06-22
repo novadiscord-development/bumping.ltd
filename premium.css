@@ -110,8 +110,6 @@ body {
     padding: 0 15px;
 }
 
-/* Continued from previous */
-
 .info-card {
     background-color: #272727; /* Dark background color */
     color: #fff;
@@ -123,76 +121,81 @@ body {
     position: relative;
 }
 
+.info-card .discount-badge {
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    color: #000;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .info-card h3 {
-    font-size: 1.3rem; /* Adjusted font size for title */
+    font-size: 1.2rem; /* Adjusted title font size */
     margin-bottom: 10px;
 }
 
-.info-card h3 img {
-    width: 10px; /* Size of the blue dot */
-    height: 10px;
-    margin-right: 5px;
-}
-
-.perks {
-    text-align: left;
-    margin-top: 20px;
-}
-
-.perks ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.perks li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.85); /* Adjusted text color */
-}
-
-.perks li img {
-    width: 10px; /* Adjust size of the blue dot */
-    height: 10px;
-    margin-right: 10px;
-}
-
-.transparent-text {
-    color: rgba(255, 255, 255, 0.5); /* Semi-transparent grey color */
-}
-
-.price {
+.info-card .price {
     font-size: 1.8rem;
     font-weight: bold;
     margin-top: 20px;
     display: block;
 }
 
-.price-large {
+.info-card .price .price-large {
     font-size: 2.5rem;
 }
 
-.price-small {
+.info-card .price .price-small {
     font-size: 0.8rem;
     color: #a2a2a2; /* Grey color */
 }
 
-.purchase-btn {
-    background-color: rgba(255, 255, 255, 0.85); /* Transparent white */
-    color: #272727; /* Dark background color */
+.info-card .perks {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info-card .perks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-card .perks li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-card .perks li img {
+    width: 10px; /* Adjust size of the blue dot */
+    height: 10px;
+    margin-right: 10px;
+}
+
+.info-card .transparent-text {
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent grey color */
+}
+
+.info-card .purchase-btn {
+    background-color: #04adfb; /* Blue button color */
+    color: #fff;
     padding: 15px;
     border-radius: 5px;
     text-decoration: none;
     display: block;
     width: calc(100% - 10px); /* Span over the whole card with a small gap */
     margin: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s;
 }
 
-.purchase-btn:hover {
+.info-card .purchase-btn:hover {
     background-color: #47b2e4; /* Darker blue on hover */
-    color: #fff;
 }
+
 
 /* Footer Styles */
 
