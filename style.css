@@ -375,9 +375,9 @@ body {
 }
 
 .info-card .perks {
-    font-size: 1rem; /* Smaller font size for perks */
-    color: #ccc; /* Light grey color for perks */
-    text-align: left; /* Left align perks list */
+    font-size: 0.6rem; /* Smaller font size for perks */
+    color: #a2a2a2; /* Light grey color for perks */
+    text-align: center; /* Left align perks list */
     margin-top: 10px;
 }
 
