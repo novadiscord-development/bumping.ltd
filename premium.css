@@ -20,10 +20,15 @@ body {
 
 /* Header Styles */
 
+/* Header styles */
 .header {
-    background-color: #272727; /* Dark header background color */
-    color: #fff;
-    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent; /* Make header transparent */
+    padding: 20px 0; /* Add padding for better spacing */
 }
 
 .navbar {
