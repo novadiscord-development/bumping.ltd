@@ -171,8 +171,8 @@ body {
 }
 
 .info-card .perks li img {
-    width: 10px; /* Adjust size of the blue dot */
-    height: 10px;
+    width: 25px; /* Adjust size of the blue dot */
+    height: 25px;
     margin-right: 10px;
 }
 
