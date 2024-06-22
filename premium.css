@@ -174,12 +174,12 @@ body {
 }
 
 .price-large {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .price-small {
     font-size: 0.8rem;
-    color: #a2a2a2; /* Grey color */
+    color: #676767; /* Grey color */
 }
 
 .perks {
