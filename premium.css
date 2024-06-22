@@ -127,11 +127,15 @@ body {
     background-color: #47b2e4; /* Blue background color */
     color: #fff;
     font-weight: bold;
-    border-radius: 20px;
-    padding: 5px 10px;
+    border-radius: 50%; /* Rounded badge */
+    padding: 5px;
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+.discount-badge span {
+    font-size: 0.8rem;
 }
 
 .price {
@@ -164,6 +168,7 @@ body {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
+    color: #a2a2a2; /* Grey color for all list items */
 }
 
 .perks li img {
