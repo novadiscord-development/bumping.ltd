@@ -128,7 +128,7 @@ body {
     justify-content: center;
     flex-wrap: wrap; /* Wrap cards if needed */
     gap: 40px; /* Increased gap by 30px */
-    max-width: 1200px;
+    width: 100%;
     margin: 150px auto; /* Adjusted margin to move cards down */
     padding: 0 15px;
 }
