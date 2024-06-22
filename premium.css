@@ -126,7 +126,8 @@ body {
 .premium-plans {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap; /* Wrap cards if needed */
+    gap: 60px; /* Increased gap by 30px */
     max-width: 1200px;
     margin: 150px auto; /* Adjusted margin to move cards down */
     padding: 0 15px;
@@ -138,7 +139,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 20px); /* Adjusted width for three cards in a row */
+    width: calc(33.33% - 80px); /* Increased width by 50px (25px each side) and adjusted calc for three cards */
     text-align: center;
     position: relative;
     transition: box-shadow 0.3s, transform 0.3s;
