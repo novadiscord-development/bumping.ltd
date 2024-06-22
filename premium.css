@@ -152,9 +152,9 @@ body {
     font-size: 1.5rem;
     margin-bottom: 10px;
     display: flex;
-    justify-content: center; /* Center title */
+    justify-content: space-between;
     align-items: center; /* Align badge and title horizontally */
-    position: relative;
+    text-align: center;
 }
 
 .discount-badge {
@@ -163,8 +163,7 @@ body {
     font-weight: bold;
     border-radius: 20px;
     padding: 5px 10px;
-    position: absolute;
-    right: -10px; /* Adjust spacing */
+    margin-left: 10px; /* Adjust spacing */
 }
 
 .price {
@@ -180,7 +179,7 @@ body {
 
 .price-small {
     font-size: 0.8rem;
-    color: #4f4f4f; /* Grey color */
+    color: #676767; /* Grey color */
 }
 
 .perks {
