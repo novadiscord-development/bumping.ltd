@@ -137,7 +137,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Fixed width for the cards */
+    width: 350px; /* Fixed width for the cards */
     text-align: center;
     position: relative;
     transition: box-shadow 0.3s, transform 0.3s;
