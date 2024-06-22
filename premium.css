@@ -114,13 +114,10 @@ body {
 .premium-plans {
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
-    flex-direction: column; /* Align cards in a column */
     gap: 30px;
     max-width: 1200px;
     margin: 150px auto; /* Adjusted margin to move cards down */
     padding: 0 15px;
-    background-color: #f2f2f2; /* Light background color */
 }
 
 .info-card {
