@@ -372,8 +372,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    width: calc(33.33% - 20px); /* Adjusted width for three cards in a row */
+    margin-bottom: 30px; /* Spacing between cards */
     text-align: center;
     border: 1.5px solid #4355FF; /* Border color */
 }
@@ -387,7 +387,7 @@ body {
 .info-card .perks {
     font-size: 0.9rem; /* Smaller font size for perks */
     color: #a2a2a2; /* Light grey color for perks */
-    text-align: center;
+    text-align: left; /* Adjust text alignment */
     margin-top: 10px;
 }
 
