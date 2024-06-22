@@ -6,11 +6,15 @@
     font-family: "Open Sans", sans-serif;
 }
 
+/* Body Styles */
+
 body {
-    height: 100%;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
     background: linear-gradient(to bottom, #272727 23%, #151515 95%);
     color: #fff;
+    height: 100vh;
 }
 
 /* Header Styles */
@@ -20,8 +24,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
-    color: #fff;
+    background-color: transparent; /* Transparent background for header */
     z-index: 1000;
 }
 
@@ -103,7 +106,7 @@ body {
     justify-content: center;
     gap: 30px;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 100px auto; /* Adjust margin as needed */
     padding: 0 15px;
 }
 
@@ -162,6 +165,7 @@ body {
 .footer {
     background: #111;
     color: #fff;
+    padding: 40px 0;
     text-align: center;
 }
 
