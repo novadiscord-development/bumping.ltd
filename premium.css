@@ -120,6 +120,7 @@ body {
     max-width: 1200px;
     margin: 150px auto; /* Adjusted margin to move cards down */
     padding: 0 15px;
+    background-color: #f2f2f2; /* Light background color */
 }
 
 .info-card {
@@ -144,7 +145,7 @@ body {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: left;
+    align-items: center; /* Align badge and title horizontally */
 }
 
 .discount-badge {
