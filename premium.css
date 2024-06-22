@@ -171,6 +171,7 @@ body {
 
 .perks li img {
     width: 10px; /* Adjust size of the blue dot */
+    height: 10px;
     margin-right: 10px;
 }
 
