@@ -356,12 +356,10 @@ body {
     order: 1;
 }
 
-/* Premium Plans Section */
 .premium-plans {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
     gap: 30px; /* Gap between info cards */
     padding: 40px 15px; /* Adjusted padding */
     max-width: 1200px;
