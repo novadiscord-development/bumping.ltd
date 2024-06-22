@@ -139,7 +139,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 80px); /* Increased width by 50px (25px each side) and adjusted calc for three cards */
+    width: calc(33.33% - 5px); /* Increased width by 50px (25px each side) and adjusted calc for three cards */
     text-align: center;
     position: relative;
     transition: box-shadow 0.3s, transform 0.3s;
