@@ -7,6 +7,7 @@
 }
 
 /* Body Styles */
+
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ body {
 }
 
 /* Header Styles */
+
 .header {
     position: fixed;
     top: 0;
@@ -98,6 +100,7 @@ body {
 }
 
 /* Premium Section Styles */
+
 .premium-plans {
     display: flex;
     justify-content: center;
@@ -106,6 +109,8 @@ body {
     margin: 100px auto; /* Adjust margin as needed */
     padding: 0 15px;
 }
+
+/* Continued from previous */
 
 .info-card {
     background-color: #272727; /* Dark background color */
@@ -119,23 +124,41 @@ body {
 }
 
 .info-card h3 {
-    font-size: 1.2rem; /* Reduced font size for title */
+    font-size: 1.3rem; /* Adjusted font size for title */
     margin-bottom: 10px;
 }
 
-.discount-badge {
-    background-color: #47b2e4; /* Blue background color */
-    color: #fff;
-    font-weight: bold;
-    border-radius: 50%; /* Rounded badge */
-    padding: 5px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.info-card h3 img {
+    width: 10px; /* Size of the blue dot */
+    height: 10px;
+    margin-right: 5px;
 }
 
-.discount-badge span {
-    font-size: 0.8rem;
+.perks {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.perks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.perks li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.85); /* Adjusted text color */
+}
+
+.perks li img {
+    width: 10px; /* Adjust size of the blue dot */
+    height: 10px;
+    margin-right: 10px;
+}
+
+.transparent-text {
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent grey color */
 }
 
 .price {
@@ -154,50 +177,25 @@ body {
     color: #a2a2a2; /* Grey color */
 }
 
-.perks {
-    text-align: left;
-    margin-top: 20px;
-}
-
-.perks ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.perks li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    color: #a2a2a2; /* Grey color for all list items */
-}
-
-.perks li img {
-    width: 10px; /* Adjust size of the blue dot */
-    height: 10px;
-    margin-right: 10px;
-}
-
-.transparent-text {
-    color: rgba(255, 255, 255, 0.5); /* Semi-transparent grey color */
-}
-
 .purchase-btn {
     background-color: rgba(255, 255, 255, 0.85); /* Transparent white */
-    color: #fff;
+    color: #272727; /* Dark background color */
     padding: 15px;
     border-radius: 5px;
     text-decoration: none;
     display: block;
     width: calc(100% - 10px); /* Span over the whole card with a small gap */
     margin: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .purchase-btn:hover {
     background-color: #47b2e4; /* Darker blue on hover */
+    color: #fff;
 }
 
 /* Footer Styles */
+
 .footer {
     background: #111;
     color: #fff;
