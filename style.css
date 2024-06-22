@@ -355,3 +355,55 @@ body {
     display: none;
     order: 1;
 }
+
+/* Info Card Styles */
+.info-card {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center; /* Center align content */
+}
+
+.info-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info-card .perks {
+    font-size: 1rem; /* Smaller font size for perks */
+    color: #ccc; /* Light grey color for perks */
+    text-align: left; /* Left align perks list */
+    margin-top: 10px;
+}
+
+.info-card .perks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-card .perks ul li {
+    margin-bottom: 5px;
+}
+
+.info-card .purchase-btn {
+    display: inline-block;
+    background-color: #4ab3f4; /* Light blue background */
+    color: #1c64f2; /* Darker blue text color */
+    padding: 12px 24px;
+    border: 2px solid #1c64f2; /* Darker blue border */
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 20px;
+}
+
+.info-card .purchase-btn:hover {
+    background-color: #1c64f2; /* Darker blue background on hover */
+    color: #fff; /* White text color on hover */
+}
