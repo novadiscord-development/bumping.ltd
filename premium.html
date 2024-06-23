@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="premium.css">
+    <link rel="stylesheet" href="test.css">
     <title>BumpX | Premium</title>
 </head>
 <body>
@@ -23,71 +24,350 @@
             </ul>
         </nav>
     </header>
-
-    <section class="premium-plans">
-        <div class="info-card">
-            <div class="plan-info">
-                <h3>Monthly Plan</h3>
-                <div class="discount-badge">0% OFF</div>
-            </div>
-            <div class="perks">
-                <ul>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
-                </ul>
-            </div>
-            <span class="price">
-                <span class="price-large">$<span class="price-large">3.99</span></span>
-                <span class="price-small">/month</span>
-            </span>
-            <a class="purchase-btn" data-sellix-product="66577b98a63c5">Purchase</a>
+    <div class="flex justify-center gap-5 pt-1">
+        <div class="flex flex-col">
+            <h1 class="font-black text-4xl mt-10 md:text-5xl md:max-w-xl text-white">Choose A <span
+                    class="text-highlight-txt">Plan</span></h1>
+            <div class="mx-auto mt-2"><label class="relative inline-flex items-center cursor-pointer"><input
+                        type="checkbox" class="sr-only peer" /><span
+                        class="ms-3 text-sm font-medium text-gray-300 mr-2">Personal Plan</span>
+                    <div
+                        class="w-11 h-6 peer-focus:outline-none rounded-full peer bg-zinc-900 bg-opacity-50 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[&#x27;&#x27;] after:flex after:mt-[2px] after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all border-gray-600 peer-checked:bg-cta-button">
+                    </div><span class="ms-3 text-sm font-medium text-gray-300 ml-2">Gift A Friend</span>
+                </label></div>
         </div>
-
-        <div class="info-card">
-            <div class="plan-info">
-                <h3>Annual Plan</h3>
-                <div class="discount-badge">20% OFF</div>
+    </div>
+    <div class="p-6 w-full grid auto-rows-min gap-1 justify-center">
+        <div class="parent grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-7xl mx-auto">
+            <div
+                class="w-full max-w-sm prem_card p-4 border-2 border-zinc-700 rounded-lg shadow sm:p-8 card-glass bg-zinc-800 ">
+                <div class="flex justify-between">
+                    <h5 class="mb-4 text-xl font-medium text-gray-500 ">Monthly <!-- -->Plan</h5>
+                    <div
+                        class="mb-7 text-sm bg-zinc-700 bg-opacity-25 rounded-2xl py-1 px-2 font-medium text-zinc-500 ">
+                        0% Off</div>
+                </div>
+                <div class="flex items-baseline text-white"><span
+                        class="text-3xl font-semibold">$</span><span
+                        class="text-5xl font-extrabold tracking-tight">3.99</span><span
+                        class="ms-1 text-xl font-normal text-gray-500 false">/month</span></div>
+                <ul role="list" class="space-y-2 my-7">
+                    <li class="flex items-center"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Automatic
+                            Sharing</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Premium
+                            Role</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Custom
+                            Banners</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Global
+                            Sharing</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Reduced
+                            Cooldown</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Hide
+                            Bump Channel</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Exclusive
+                            Server Badge</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Priority
+                            Support</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Free
+                            Setup Assistance</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Export Bump
+                            Data As PDF</span></li>
+                </ul><button type="button"
+                    class="text-white bg-cta-button hover:bg-cta-dark font-semibold rounded-lg animate-shake text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
+                    <!-- -->Plan</button><button data-sellix-product="64185f6242b55" type="submit"
+                    alt="Purchase Modal" data-sellix-custom-referrer="none" class="hidden"></button>
             </div>
-            <div class="perks">
-                <ul>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
-                </ul>
+            <div
+                class=" w-full max-w-sm prem_card p-4 border-2 border-zinc-700 rounded-lg shadow sm:p-8 card-glass bg-zinc-800 ">
+                <div class="flex justify-between">
+                    <h5 class="mb-4 text-xl font-medium text-gray-500 ">Annual <!-- -->Plan</h5>
+                    <div
+                        class="mb-7 text-sm bg-blue-600 bg-opacity-25 rounded-2xl py-1 px-2 font-medium text-highlight-txt ">
+                        20% Off</div>
+                </div>
+                <div class="flex items-baseline text-white"><span
+                        class="text-3xl font-semibold">$</span><span
+                        class="text-5xl font-extrabold tracking-tight">39.99</span><span
+                        class="ms-1 text-xl font-normal text-gray-500 false">/year</span></div>
+                <ul role="list" class="space-y-2 my-7">
+                    <li class="flex items-center"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Automatic
+                            Sharing</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Premium
+                            Role</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Custom
+                            Banners</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Global
+                            Sharing</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Reduced
+                            Cooldown</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Hide
+                            Bump Channel</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Exclusive
+                            Server Badge</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Priority
+                            Support</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Free
+                            Setup Assistance</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Export Bump
+                            Data As PDF</span></li>
+                </ul><button type="button"
+                    class="text-white bg-cta-button hover:bg-cta-dark font-semibold rounded-lg animate-shake text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
+                    <!-- -->Plan</button><button data-sellix-product="641860142a4b0" type="submit"
+                    alt="Purchase Modal" data-sellix-custom-referrer="none" class="hidden"></button>
             </div>
-            <span class="price">
-                <span class="price-large">$<span class="price-large">29.99</span></span>
-                <span class="price-small">/year</span>
-            </span>
-            <a class="purchase-btn" data-sellix-product="66747315e897d">Purchase</a>
+            <div
+                class="w-full max-w-sm prem_card p-4 border-2 border-cta-button rounded-lg shadow sm:p-8 card-glass bg-zinc-800 relative overflow-hidden">
+                <div id="card-gradient"
+                    class="absolute -top-2/3 filter blur-3xl opacity-25 -left-1/3 w-full h-full rounded-full">
+                </div>
+                <div class="flex justify-between">
+                    <h5 class=" gradient-text mb-4 text-xl font-medium text-gray-500 z-10">Lifetime
+                        <!-- -->Plan</h5>
+                    <div
+                        class="mb-7 text-sm bg-blue-600 bg-opacity-25 rounded-2xl py-1 px-2 font-medium text-highlight-txt z-10">
+                        Best Value</div>
+                </div>
+                <div class="flex items-baseline text-white"><span
+                        class="text-3xl font-semibold">$</span><span
+                        class="text-5xl font-extrabold tracking-tight z-10">89.99</span><span
+                        class="ms-1 text-xl font-normal text-gray-500 z-10 false">/lifetime</span></div>
+                <ul role="list" class="space-y-2 my-7">
+                    <li class="flex items-center"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Automatic
+                            Sharing</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Premium
+                            Role</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Custom
+                            Banners</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Global
+                            Sharing</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Reduced
+                            Cooldown</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Hide
+                            Bump Channel</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Exclusive
+                            Server Badge</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Priority
+                            Support</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Free
+                            Setup Assistance</span></li>
+                    <li class="flex"><svg class="flex-shrink-0 w-4 h-4 text-highlight-txt"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z">
+                            </path>
+                        </svg><span
+                            class="text-base font-normal leading-tight text-gray-500 ms-3 ml-1">Export Bump
+                            Data As PDF</span></li>
+                </ul><button type="button"
+                    class="text-white bg-cta-button hover:bg-cta-dark font-semibold rounded-lg animate-shake text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose
+                    <!-- -->Plan</button><button data-sellix-product="641860162cfa5" type="submit"
+                    alt="Purchase Modal" data-sellix-custom-referrer="none" class="hidden"></button>
+            </div>
         </div>
+    </div>
+</div>
+</div>
+<div class="Toastify"></div>
+</div>
 
-        <div class="info-card">
-            <div class="plan-info">
-                <h3>Lifetime Plan</h3>
-                <div class="discount-badge">Best Value</div>
-            </div>
-            <div class="perks">
-                <ul>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
-                </ul>
-            </div>
-            <span class="price">
-                <span class="price-large">$59.99</span>
-                <span class="price-small">/Lifetime</span>
-            </span>
-            <a class="purchase-btn" data-sellix-product="6674733687e72">Purchase</a>
-        </div>
-    </section>
 
     <!-- Sellix Embed Script -->
     <script src="https://cdn.sellix.io/static/js/embed.js"></script>
