@@ -132,29 +132,34 @@ body {
 }
 
 .info-card {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for glass effect */
-    color: #fff; /* White text color */
+    background: rgba(28, 28, 28, 0.7); /* Semi-translucent dark background */
+    color: #fff; /* Card text color */
     padding: 30px;
     border-radius: 10px;
-    border: 3px solid rgba(255, 255, 255, 0.5); /* White border with semi-transparency */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Bold white ring border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 350px; /* Fixed width for the cards */
     text-align: center;
     position: relative;
     transition: box-shadow 0.3s, transform 0.3s;
+    backdrop-filter: blur(10px); /* Glass effect */
 }
 
 .info-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
+}
+
+.plan-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .info-card h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Align badge and title horizontally */
+    margin: 0;
 }
 
 .discount-badge {
@@ -164,24 +169,22 @@ body {
     border-radius: 20px;
     padding: 5px 10px;
     margin-left: 10px; /* Adjust spacing */
-    font-size: 0.8rem; /* Adjust badge font size */
-    position: absolute; /* Position badge */
-    right: 10px; /* Move badge to the right */
+    font-size: 0.9rem; /* Smaller font size */
 }
 
 .price {
-    font-size: 1.8rem;
+    font-size: 2.5rem; /* Increased font size */
     font-weight: bold;
     margin-top: 20px;
     display: block;
 }
 
 .price-large {
-    font-size: 2.5rem; /* Increased font size for the price */
+    font-size: 2.5rem; /* Larger price font */
 }
 
 .price-small {
-    font-size: 1rem; /* Adjusted font size for the price period */
+    font-size: 1rem;
     color: #ccc; /* Lighter grey color */
 }
 
@@ -202,26 +205,24 @@ body {
 }
 
 .perks li img {
-    width: 10px; /* Adjust size of the blue dot */
-    height: 10px;
+    width: 15px; /* Adjust size of the blue dot */
+    height: 15px;
     margin-right: 10px;
 }
 
 .transparent-text {
-    color: rgba(255, 255, 255, 0.5); /* Semi-transparent grey color */
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
 }
 
 .purchase-btn {
     background-color: #04adfb; /* Blue button color */
     color: #fff;
-    padding: 20px 40px; /* Increase button padding */
+    padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
     transition: background-color 0.3s;
-    font-size: 1.2rem; /* Increase button text size */
-    font-weight: bold; /* Make button text bold */
 }
 
 .purchase-btn:hover {
