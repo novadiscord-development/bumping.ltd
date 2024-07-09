@@ -132,11 +132,11 @@ body {
 }
 
 .info-card {
-    background-color: #fff; /* Card background color */
-    color: #333; /* Card text color */
+    background-color: #1c1c1c; /* Dark card background color */
+    color: #fff; /* Card text color */
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 350px; /* Fixed width for the cards */
     text-align: center;
     position: relative;
@@ -144,7 +144,7 @@ body {
 }
 
 .info-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     transform: translateY(-5px);
 }
 
@@ -152,8 +152,8 @@ body {
     font-size: 1.5rem;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center; /* Align badge and title horizontally */
+    justify-content: center;
+    align-items: center; /* Center the title */
     text-align: center;
 }
 
@@ -163,23 +163,25 @@ body {
     font-weight: bold;
     border-radius: 20px;
     padding: 5px 10px;
-    margin-left: 10px; /* Adjust spacing */
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .price {
-    font-size: 1.8rem;
+    font-size: 2.5rem; /* Increased font size */
     font-weight: bold;
     margin-top: 20px;
     display: block;
 }
 
 .price-large {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Larger price font */
 }
 
 .price-small {
-    font-size: 0.8rem;
-    color: #676767; /* Grey color */
+    font-size: 1rem;
+    color: #ccc; /* Lighter grey color */
 }
 
 .perks {
@@ -199,13 +201,13 @@ body {
 }
 
 .perks li img {
-    width: 10px; /* Adjust size of the blue dot */
-    height: 10px;
+    width: 15px; /* Adjust size of the blue dot */
+    height: 15px;
     margin-right: 10px;
 }
 
 .transparent-text {
-    color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey color */
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white color */
 }
 
 .purchase-btn {
