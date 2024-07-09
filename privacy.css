@@ -113,6 +113,7 @@ body {
     background-color: #1e1e1e; /* Change background color to dark gray */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for better contrast */
+    text-align: center;
 }
 
 .privacy-container h1 {
