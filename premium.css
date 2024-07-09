@@ -150,13 +150,16 @@ body {
     transform: translateY(-5px);
 }
 
+.plan-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .info-card h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center the title */
-    text-align: center;
+    margin: 0;
 }
 
 .discount-badge {
@@ -165,9 +168,7 @@ body {
     font-weight: bold;
     border-radius: 20px;
     padding: 5px 10px;
-    position: absolute;
-    top: 20px;
-    right: 10px; /* Move further to the right */
+    margin-left: 10px; /* Adjust spacing */
     font-size: 0.9rem; /* Smaller font size */
 }
 
