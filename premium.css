@@ -132,15 +132,17 @@ body {
 }
 
 .info-card {
-    background-color: #1c1c1c; /* Dark card background color */
+    background: rgba(28, 28, 28, 0.7); /* Semi-translucent dark background */
     color: #fff; /* Card text color */
     padding: 30px;
     border-radius: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Bold white ring border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 350px; /* Fixed width for the cards */
     text-align: center;
     position: relative;
     transition: box-shadow 0.3s, transform 0.3s;
+    backdrop-filter: blur(10px); /* Glass effect */
 }
 
 .info-card:hover {
@@ -165,7 +167,8 @@ body {
     padding: 5px 10px;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 10px; /* Move further to the right */
+    font-size: 0.9rem; /* Smaller font size */
 }
 
 .price {
