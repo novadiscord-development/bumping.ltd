@@ -110,8 +110,9 @@ body {
 .privacy-container {
     max-width: 800px;
     padding: 20px;
-    background-color: transparent; /* No background color */
+    background-color: #1e1e1e; /* Change background color to dark gray */
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for better contrast */
 }
 
 .privacy-container h1 {
@@ -120,15 +121,14 @@ body {
 }
 
 .privacy-container p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: rgb(102, 102, 102);
+    font-size: 1rem; /* Increased font size for better readability */
+    line-height: 1.6; /* Adjusted line height for better readability */
+    color: #bbb; /* Changed text color to light gray */
     margin-bottom: 15px;
 }
 
 .privacy-container ul {
     list-style-type: none;
-    margin-left: 20px;
     padding-left: 0;
 }
 
@@ -141,22 +141,14 @@ body {
 }
 
 .privacy-container ul li:before {
-    content: "-";
+    content: "•"; /* Changed the content to a bullet point */
     position: absolute;
     left: 0;
-    color: #fff; /* Make the "-" white */
-}
-
-.privacy-container ul li span {
-    background: linear-gradient(90deg, #1e90ff, #0073ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+    color: #fff; /* Make the bullet point white */
 }
 
 a {
-    color: rgb(81, 127, 255);
+    color: #5190ff; /* Changed link color to match design */
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
 }
@@ -250,4 +242,12 @@ a:hover {
     cursor: pointer;
     display: none;
     order: 1;
+}
+
+/* Additional styles for note at the bottom */
+.note {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-align: center;
+    margin-top: 20px;
 }
