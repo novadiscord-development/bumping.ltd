@@ -2,84 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png" />
-    <meta property="og:image:width" content="307"/>
-    <meta property="og:image:height" content="307"/>
-    <meta property="og:locale" content="en_US"/>
-    <meta property="og:image:type" content="image/png"/>
-    <meta property="og:image:alt" content="BumpX Logo"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="BumpX"/>
-    <meta name="twitter:title" content="BumpX | #1 Discord Bump Bot"/>
-    <meta name="twitter:description" content="BumpX is a bot that helps promote your Discord server to thousands of servers. The goal is to help you get more members and increase the visibility of your server. "/>
-    <meta name="twitter:image" content="images/icon.png"/>
-    <meta name="theme-color" content="#1A56DB"/>
-    <meta
-      name="keywords"
-      content="onebump, top.gg, bumpit, special share, disboard, bump, bump bot, discord, discord bot, discord bots, discord server, discord servers, discord community, discord communities, discord community growth, discord growth, discord server growth, discord marketing, discord promotion, discord advertising, discord server advertising, discord server promotion, discord server discovery, discord server listing, discord server directory, discord server finder, discord server search, discord server management, discord server moderation, discord server administration, discord server setup, discord server setup guide, discord server tips, discord server tricks, discord server features, discord server customization, discord server themes, discord server templates, discord server rules, discord server guidelines, discord server rules template, discord server management bot, discord bot development, discord bot programming, discord bot coding, discord bot tutorial, discord bot commands, discord bot features, discord bot setup, discord bot hosting, discord bot permissions, discord bot moderation, discord bot logging, discord bot analytics, discord bot automation, discord bot management, discord bot integration, discord bot API, discord bot library, discord bot framework, discord bot repository, discord bot marketplace, discord bot store, discord bot list, discord bot website, discord bot template, discord bot template generator, discord bot community, discord bot support, discord bot updates, discord bot maintenance, discord bot troubleshooting, discord bot security, discord bot best practices, discord bot tips, discord bot tricks, discord bot ideas, discord bot inspiration, discord bot resources, discord bot tutorials, discord bot examples, discord bot showcase, discord bot review, discord bot ranking, discord bot of the day, discord bot of the week, discord bot of the month, discord bot competition, discord bot contest, discord bot awards, discord bot certification, discord bot verification, discord bot verification badge, discord bot authentication, discord bot permissions, discord bot privacy, discord bot terms of service, discord bot copyright, discord bot license, discord bot credits, discord bot credits system, discord bot premium, discord bot monetization, discord bot donation, discord bot subscription, discord bot sponsorship, discord bot partnerships, discord bot affiliate, discord bot affiliate program, discord bot community guidelines, discord bot community standards, discord bot community rules, discord bot feedback, discord bot feature requests, discord bot bug reports, discord bot help, discord bot support, discord bot user guide, discord bot documentation, discord bot FAQ, discord bot troubleshooting, discord bot status, discord bot downtime, discord bot uptime, discord bot performance, discord bot scalability, discord bot reliability, discord bot stability, discord bot efficiency, discord bot optimization, discord bot analytics, discord bot metrics, discord bot reporting, discord bot user engagement, discord bot user retention, discord bot user interaction, discord bot user satisfaction, discord bot user feedback, discord bot user activity, discord bot user behavior, discord bot user experience, discord bot user interface, discord bot user journey, discord bot user flow, discord bot user funnel, discord bot user segmentation, discord bot user targeting, discord bot user preferences, discord bot user personas, discord bot user profiles, discord bot user data, discord bot user privacy, discord bot user security, discord bot user trust, discord bot user verification, discord bot user authentication, discord bot user permissions, discord bot user roles, discord bot user bans, discord bot user kicks, discord bot user mutes, discord bot user warns, discord bot user messages, discord bot user commands, discord bot user triggers, discord bot user interactions, discord bot user engagement metrics, discord bot user activity logs, discord bot user presence, discord bot user status, discord bot user online status, discord bot user offline status, discord bot user away status, discord bot user busy status, discord bot user typing status, discord bot user voice status, discord bot user activity status, discord bot user custom status, discord bot user profile customization, discord bot user avatar, discord bot user nickname, discord bot user bio, discord bot user website, discord bot user social media, discord bot user links, discord bot user connected accounts, discord bot user achievements, discord bot user badges, discord bot user levels, discord bot user experience points, discord bot user rewards, discord bot user incentives, discord bot user loyalty, discord bot user engagement, discord bot user participation, discord bot user community, discord bot user forum, discord bot user chat, discord bot user voice chat, discord bot user voice channels, discord bot user text channels, discord bot user direct messages, discord bot user group messages, discord bot user server messages, discord bot user channel messages, discord bot user mentions, discord bot user tags, discord bot user roles, discord bot user permissions, discord bot user privacy settings, discord bot user notification settings, discord bot user customization settings, discord bot user language settings, discord bot user theme settings, discord bot user accessibility settings, discord bot user profile settings, discord bot user security settings, discord bot user privacy policy, discord bot user terms of service, discord bot user guidelines, discord bot user rules, discord bot user etiquette, discord bot user behavior standards, discord bot user code of conduct, discord bot user best practices, discord bot user tips, discord bot user tricks, discord bot user ideas, discord bot user inspiration, discord bot user resources, discord bot user tutorials, discord bot user examples, discord bot user showcase, discord bot user review, discord bot user ranking, discord bot user leaderboard, discord bot user stats, discord bot user metrics, discord bot user activity tracker, discord bot user engagement tracker, discord bot user monitoring, discord bot user activity logs, discord bot user interaction logs, discord bot user behavior logs, discord bot user chat logs, discord bot user message logs, discord bot user command logs, discord bot user moderation logs, discord bot user management logs, discord bot user administration logs, discord bot user audit logs, discord bot user activity history, discord bot user trends, discord bot user insights, discord bot user analytics, discord bot user metrics, discord bot user performance metrics, discord bot user engagement metrics, discord bot user retention metrics, discord bot user satisfaction metrics, discord bot user behavior metrics, discord bot user activity metrics, discord bot user interaction metrics, discord bot user conversion metrics, discord bot user conversion rate, discord bot user churn rate, discord bot user bounce rate, discord bot user click-through rate, discord bot user response rate, discord bot user completion rate, discord bot user success rate, discord bot user conversion optimization, discord bot user engagement optimization, discord bot user retention optimization, discord bot user satisfaction optimization, discord"
-    />
-    <title>BumpX | #1 Discord Bump Bot</title>
+    <meta id="viewport" name="viewport">
+
+    <script type="text/javascript">
+    //mobile viewport hack
+    (function(){
+
+      function apply_viewport(){
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)   ) {
+
+          var ww = window.screen.width;
+          var mw = 800; // min width of site
+          var ratio =  ww / mw; //calculate ratio
+          var viewport_meta_tag = document.getElementById('viewport');
+          if( ww < mw){ //smaller than minimum size
+            viewport_meta_tag.setAttribute('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=no, width=' + mw);
+          }
+          else { //regular size
+            viewport_meta_tag.setAttribute('content', 'initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+          }
+        }
+      }
+
+      //ok, i need to update viewport scale if screen dimentions changed
+      window.addEventListener('resize', function(){
+        apply_viewport();
+      });
+
+      apply_viewport();
+
+    }());
+    </script>
+
+    <title>Grow Your Server | AYS</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="icons/16x16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/16x16.png">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Grow Your Server | AYS">
+    <meta property="og:description" content="Our bump bot is designed to help you attract members, increase activity, and improve engagement on your Discord server. With one command you can easily promote your discord server to thousands and enjoy faster Discord server growth.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:site_name" content="Grow Your Server | AYS">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Grow Your Server | AYS">
+    <meta name="twitter:description" content="Our bump bot is designed to help you attract members, increase activity, and improve engagement on your Discord server. With one command you can easily promote your discord server to thousands and enjoy faster Discord server growth.">
+    <meta name="twitter:image" content="logo.png">
+
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Our bump bot is designed to help you attract members, increase activity, and improve engagement on your Discord server. With one command you can easily promote your discord server to thousands and enjoy faster Discord server growth.">
+    <meta name="keywords" content="Discord bot, server growth, engagement, community, bump bot">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <h2 class="logo"><a href="/">BumpX</a></h2>
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" id="hamburger-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </label>
-            <ul class="links">
-                <li><a href="/">Home</a></li>
-                <li><a href="https://discord.com/invite/69gbJzxem7">Support</a></li>
-                <li><a href="/premium">Premium</a></li>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="icons/logo.png" alt="Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#preview">Preview</a></li>
+                <li><a href="https://discord.gg/X5tJZJPzGB">Support</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-    <section class="hero-section">
-        <div class="hero">
-            <h2>#1 Discord Bump Bot</h2>
-            <p>
-                Our bump bot is designed to help you attract members, increase activity, and improve engagement on your Discord server.
-                With one command you can easily promote your discord server to a thousands and enjoy faster discord server growth.
-            </p>
-            <div class="buttons">
-                <a href="https://discord.gg/69gbJzxem7" class="learn">Support Server</a>
-                <a href="https://top.gg/bot/1241694082749698118" class="learn">Add BumpX</a>
-            </div>
+
+    <main>
+        <div class="content">
+            <h1>AYS Bump</h1>
+            <p class="description">Our bump bot is designed to help you attract members, increase activity, and improve engagement on your Discord server. With one command you can easily promote your discord server to thousands and enjoy faster Discord server growth.</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1265343375054340160" class="waiting-list" target="_blank">Add to Server</a>
         </div>
-        <div class="img">
-            <img src="images/icon.png" alt="hero image" />
+    </main>
+
+    <section id="features" class="section">
+        <h2>Mind Blowing Capabilities</h2>
+        <p>Finding your dream community or boosting your growth made easy</p>
+        <div class="scrolling-text-container">
+            <div class="scrolling-text">
+                <span>Auto Sharing</span>
+                <span>High Exposure</span>
+                <span>Fully Customizable</span>
+                <span>Discord Markdown</span>
+                <span>Intuitive User Interface</span>
+            </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-logo">
-                <img src="images/icon.png" alt="BumpX Logo">
-            </div>
-            <div class="footer-sections">
-                <div class="footer-section">
-                    <h3>Links</h3>
-                    <ul class="links">
-                        <li><a href="https://discord.com/invite/69gbJzxem7">Support Server</a></li>
-                        <li><a href="https://discord.com/oauth2/authorize?client_id=1241694082749698118">Add BumpX</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Legal</h3>
-                    <ul class="legal">
-                        <li><a href="/terms">Terms Of Service</a></li>
-                        <li><a href="/refund"> Refund Policy</a></li>
-                        <li><a href="/privacy" >Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
+
+    <section id="preview" class="section">
+        <h2>Elevate your server growth.</h2>
+        <p>Boost your server growth effortlessly with one command. Gaining active members is now easier than ever before with our innovative Discord bump bot.</p>
+        <div class="button-container">
+            <button class="custom-button">Boost your audience</button>
+            <button class="custom-button">One-click join</button>
+            <button class="custom-button">Custom Embed Colours & Footers</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="icons/logo.png" alt="Logo">
+        </div>
+        <div class="footer-texts">
+            <a href="#refund">Refund Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="footer-discord">
+            <a href="https://discord.com/" target="_blank">
+                <img src="icons/discord_logo.png" alt="Discord">
+            </a>
         </div>
     </footer>
-    <script src="index.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>

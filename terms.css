@@ -1,0 +1,146 @@
+/* Import the main styles */
+@import url('style.css');
+
+/* Main Title and Description Outside the Border */
+.terms-header {
+    text-align: center;
+    margin-top: 5vh;
+    padding: 5px;
+    background: transparent;
+}
+
+.terms-header h1 {
+    font-size: calc(2.5rem + 1vw); /* Fluid font size */
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, #ffffff 60%, #c9c9c9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.last-updated {
+    font-size: calc(1rem + 0.5vw); /* Fluid font size */
+    color: #8a8a8a;
+    margin-bottom: 20px;
+}
+
+/* Terms Content Box */
+.terms-content {
+    margin: 0 auto;
+    padding: 5vw;
+    max-width: 100%; /* Fluid width */
+    border: 1px solid black; /* Black border around the content */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: calc(1rem + 0.5vw); /* Fluid font size */
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Section Titles */
+.terms-content h2 {
+    font-size: calc(1.5rem + 0.5vw); /* Fluid font size */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding-bottom: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+.terms-content h2::after {
+    content: '';
+    display: block;
+    width: calc(100% - 20px); /* Adjusting the width to be slightly shorter than the text */
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 10px; /* Adding a 10px gap from the end of the text */
+}
+
+/* Paragraph Text */
+.terms-content p {
+    text-align: center; /* Center-aligning the paragraphs */
+}
+
+/* List Items */
+.terms-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.terms-content ul li {
+    margin-bottom: 15px; /* Add space between list items */
+    padding-left: 40px; /* Adjusted padding for bullet alignment */
+    color: transparent;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    font-weight: 700; /* Bold font for emphasis */
+    font-size: calc(1rem + 0.3vw); /* Ensuring the list item text has the desired size */
+    text-align: left; /* Aligning the text inside each item to the left */
+    position: relative;
+}
+
+/* Bullet Styling */
+.terms-content ul li::before {
+    content: "•"; /* Bullet point as a text character */
+    position: absolute;
+    left: 0; /* Align bullet to the left */
+    top: 0; /* Align bullet to the top */
+    transform: translateY(0); /* Prevent vertical misalignment */
+    font-size: calc(1rem + 0.3vw); /* Match bullet size to text */
+    line-height: 1.8; /* Ensure line height matches text for vertical alignment */
+    color: #00c6ff; /* Color of the bullet point */
+    font-weight: bold; /* Make bullet bold */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .terms-header h1 {
+        font-size: calc(2rem + 1vw); /* Adjusted font size for small screens */
+    }
+
+    .terms-content {
+        padding: 5vw;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+
+    .terms-content h2 {
+        font-size: calc(1.2rem + 0.5vw); /* Adjusted font size for small screens */
+    }
+
+    .terms-content ul li {
+        font-size: calc(0.9rem + 0.3vw);
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-header h1 {
+        font-size: calc(1.8rem + 1vw); /* Further adjusted font size for very small screens */
+    }
+
+    .terms-content {
+        padding: 6vw;
+        font-size: calc(0.8rem + 0.5vw);
+    }
+
+    .terms-content h2 {
+        font-size: calc(1rem + 0.5vw); /* Further adjusted font size for very small screens */
+    }
+
+    .terms-content ul li {
+        font-size: calc(0.8rem + 0.3vw);
+        margin-bottom: 4vw;
+    }
+
+    .terms-content ul li::before {
+        font-size: calc(0.8rem + 0.3vw); /* Adjusted bullet size */
+    }
+}

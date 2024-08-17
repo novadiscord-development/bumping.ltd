@@ -1,137 +1,69 @@
-/* Reset Styles */
+/* Import the main styles */
+@import url('style.css');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Premium Page (premium.css) */
+
+/* Premium Header */
+.premium-header {
+    text-align: center;
+    margin-top: 5vh;
+    padding: 5px;
+    background: transparent;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #272727 23%, #151515 95%);
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.premium-header h1 {
+    font-size: calc(2.5rem + 1vw);
+    font-weight: 700;
+    background: linear-gradient(to bottom, #ffffff 60%, #c9c9c9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Header Styles */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: transparent; /* Make header transparent */
-    padding: 20px 0; /* Add padding for better spacing */
+/* Slider Container */
+.slider-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
-.navbar {
+.slider-labels {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
+    width: 600px;
     margin: 0 auto;
-    padding: 0 15px;
-}
-
-.logo {
-    font-size: 1.5rem;
-}
-
-.logo a {
     color: #fff;
-    text-decoration: none;
+    font-weight: bold;
 }
 
-.links {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
+.slider {
+    width: 600px;
 }
 
-.links li {
-    font-size: 1.1rem;
-}
-
-.links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.links a:hover {
-    color: #04adfb; /* Hover color */
-}
-
-#menu-toggle {
-    display: none;
-}
-
-#hamburger-btn {
-    cursor: pointer;
-    display: none;
-}
-
+/* Make the slider responsive */
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+    .slider {
+        width: 90%; /* Adjust the width for smaller screens */
     }
 
-    .links {
-        margin-top: 10px;
-    }
-
-    #menu-toggle:checked + .navbar {
-        display: block;
-        margin-top: 10px;
-    }
-
-    #hamburger-btn {
-        display: block;
-        order: 1;
-    }
-
-    .links {
-        order: 3;
-        display: none;
-        width: 100%;
-        background-color: #333;
-        text-align: center;
-    }
-    .links li {
-        display: block;
-        padding: 15px 0;
-    }
-
-    .links a {
-        color: #fff;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    .links a:hover {
-        color: #04adfb; /* Hover color */
+    .slider-labels {
+        width: 90%; /* Adjust the width for the labels */
+        font-size: 0.9rem; /* Adjust font size for mobile */
     }
 }
 
-/* Premium Plans Section */
-
-.premium-plans {
+.cards-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* Adjusted gap */
-    max-width: 1500px;
-    margin: 150px auto; /* Adjusted margin to move cards down */
-    padding: 0 15px;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
+/* Info Card Styling */
 .info-card {
+    flex: 1 1 300px; /* Allow cards to be flexible and responsive */
+    max-width: 350px;
     background: rgba(28, 28, 28, 0.7); /* Semi-translucent dark background */
     color: #fff; /* Card text color */
     padding: 30px;
@@ -143,11 +75,6 @@ body {
     position: relative;
     transition: box-shadow 0.3s, transform 0.3s;
     backdrop-filter: blur(10px); /* Glass effect */
-}
-
-.info-card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
 }
 
 .plan-info {
@@ -208,6 +135,7 @@ body {
     width: 15px; /* Adjust size of the blue dot */
     height: 15px;
     margin-right: 10px;
+    margin-left: 30px;
 }
 
 .transparent-text {
@@ -227,4 +155,19 @@ body {
 
 .purchase-btn:hover {
     background-color: #47b2e4; /* Darker blue on hover */
+}
+
+/* Additional mobile adjustments */
+@media screen and (max-width: 480px) {
+    .premium-header h1 {
+        font-size: 2rem; /* Smaller header font size on mobile */
+    }
+
+    .info-card {
+        width: 90%; /* Make the card width responsive */
+    }
+
+    .slider-labels {
+        font-size: 0.8rem; /* Further reduce label font size for small screens */
+    }
 }

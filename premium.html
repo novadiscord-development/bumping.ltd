@@ -2,96 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" name="viewport">
+
+    <script type="text/javascript">
+    //mobile viewport hack
+    (function(){
+      function apply_viewport(){
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)   ) {
+          var ww = window.screen.width;
+          var mw = 800; // min width of site
+          var ratio =  ww / mw; //calculate ratio
+          var viewport_meta_tag = document.getElementById('viewport');
+          if( ww < mw){ //smaller than minimum size
+            viewport_meta_tag.setAttribute('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=no, width=' + mw);
+          }
+          else { //regular size
+            viewport_meta_tag.setAttribute('content', 'initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width=' + ww);
+          }
+        }
+      }
+
+      //ok, i need to update viewport scale if screen dimensions changed
+      window.addEventListener('resize', function(){
+        apply_viewport();
+      });
+
+      apply_viewport();
+    }());
+    </script>
+    <title>Premium | AYS</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="icons/16x16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/16x16.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="premium.css">
-    <title>BumpX | Premium</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <h2 class="logo"><a href="/">BumpX</a></h2>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" id="hamburger-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                    <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </label>
-            <ul class="links">
-                <li><a href="/">Home</a></li>
-                <li><a href="https://discord.com/invite/69gbJzxem7">Support</a></li>
-                <li><a href="/premium">Premium</a></li>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="icons/logo.png" alt="Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#preview">Preview</a></li>
+                <li><a href="https://discord.gg/X5tJZJPzGB">Support</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
-    <section class="premium-plans">
-        <div class="info-card">
-            <div class="plan-info">
-                <h3>Monthly Plan</h3>
-                <div class="discount-badge">0% OFF</div>
-            </div>
-            <div class="price">£3.99<span class="price-small">/month</span></div>
-            <div class="perks">
-                <ul>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Hide Bump Channel</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Exclusive Server Badge</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
-                </ul>
-            </div>
-            <a class="purchase-btn" data-sellix-product="66577b98a63c5">Choose Plan</a>
+    <main>
+        <div class="premium-header">
+            <h1>Premium Plans</h1>
         </div>
 
-        <div class="info-card">
-            <div class="plan-info">
-                <h3>Annual Plan</h3>
-                <div class="discount-badge">20% OFF</div>
+        <!-- Premium Cards Section -->
+        <div class="cards-container">
+            <!-- Monthly Plan -->
+            <div class="info-card">
+                <div class="plan-info">
+                    <h3>Monthly Plan</h3>
+                    <div class="discount-badge">0% OFF</div>
+                </div>
+                <div class="price">
+                    $3.99<span class="price-small">/month</span>
+                </div>
+                <div class="perks">
+                    <ul>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Hide Bump Channel</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Exclusive Server Badge</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
+                    </ul>
+                </div>
+                <a class="purchase-btn" data-sellix-product="66a156f93bb7b">Choose Plan</a>
             </div>
-            <div class="price">£39.99<span class="price-small">/year</span></div>
-            <div class="perks">
-                <ul>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Custom Banners</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Hide Bump Channel</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Exclusive Server Badge</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Export Bump Data As PDF</li>
-                </ul>
-            </div>
-            <a class="purchase-btn" data-sellix-product="66747315e897d">Choose Plan</a>
-        </div>
 
-        <div class="info-card">
-            <div class="plan-info">
-                <h3>Lifetime Plan</h3>
-                <div class="discount-badge">Best Value</div>
+            <!-- Yearly Plan -->
+            <div class="info-card">
+                <div class="plan-info">
+                    <h3>Yearly Plan</h3>
+                    <div class="discount-badge">20% OFF</div>
+                </div>
+                <div class="price">
+                    $39.99<span class="price-small">/year</span>
+                </div>
+                <div class="perks">
+                    <ul>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Hide Bump Channel</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Exclusive Server Badge</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
+                    </ul>
+                </div>
+                <a class="purchase-btn" data-sellix-product="66a156fdc690e">Choose Plan</a>
             </div>
-            <div class="price">£69.99<span class="price-small">/lifetime</span></div>
-            <div class="perks">
-                <ul>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Custom Banners</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Hide Bump Channel</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Exclusive Server Badge</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
-                    <li><img src="blue-dot.png" alt="Blue Dot"> Export Bump Data As PDF</li>
-                </ul>
+
+            <!-- Lifetime Plan -->
+            <div class="info-card">
+                <div class="plan-info">
+                    <h3>Lifetime Plan</h3>
+                    <div class="discount-badge">Best Value!</div>
+                </div>
+                <div class="price">
+                    $89.99<span class="price-small">/lifetime</span>
+                </div>
+                <div class="perks">
+                    <ul>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Automatic Sharing</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Premium Role</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Global Sharing</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Reduced Cooldown</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Hide Bump Channel</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Exclusive Server Badge</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Priority Support</li>
+                        <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
+                    </ul>
+                </div>
+                <a class="purchase-btn" data-sellix-product="66a1571ce3e20">Choose Plan</a>
             </div>
-            <a class="purchase-btn" data-sellix-product="6674733687e72">Choose Plan</a>
         </div>
-    </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="icons/logo.png" alt="Logo">
+        </div>
+        <div class="footer-texts">
+            <a href="#refund">Refund Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#privacy">Privacy Policy</a>
+        </div>
+        <div class="footer-discord">
+            <a href="https://discord.com/" target="_blank">
+                <img src="icons/discord_logo.png" alt="Discord">
+            </a>
+        </div>
+    </footer>
 
     <!-- Sellix Embed Script -->
     <script src="https://cdn.sellix.io/static/js/embed.js"></script>
