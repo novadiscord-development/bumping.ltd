@@ -89,6 +89,7 @@ nav {
     font-size: 1.1rem;
     background: linear-gradient(to bottom, #ffffff, #bbbbbb);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: color 0.3s ease;
 }
@@ -133,6 +134,7 @@ main {
     margin-bottom: 20px;
     background: linear-gradient(to bottom, #ffffff 60%, #c9c9c9);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -207,6 +209,7 @@ section h2 {
     margin-bottom: 20px;
     background: linear-gradient(to bottom, #ffffff 60%, #c9c9c9); /* Silver-ish gradient */
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
 }
@@ -489,6 +492,7 @@ footer {
     font-weight: 700; /* Thicker text */
     background: linear-gradient(to bottom, #ffffff, #bbbbbb); /* White-to-grey gradient */
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: color 0.3s ease;
 }
@@ -509,4 +513,3 @@ footer {
     body {
         overflow: hidden; /* Prevent scrolling on smaller screens */
     }
-}
