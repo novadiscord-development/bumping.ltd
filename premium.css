@@ -172,3 +172,54 @@
         font-size: 0.8rem; /* Further reduce label font size for small screens */
     }
 }
+
+/* Advertisement Section */
+.advertisement-section {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark background to match the theme */
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.advertisement-content {
+    max-width: 1100px; /* Same width as the combined cards width */
+    text-align: center;
+}
+
+.advertisement-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.advertisement-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.advertisement-content .purchase-btn {
+    background-color: #ff5e5e; /* Distinct color for the advertisement button */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.advertisement-content .purchase-btn:hover {
+    background-color: #ff4d4d; /* Darker red on hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .advertisement-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .advertisement-content p {
+        font-size: 1rem;
+    }
+}
