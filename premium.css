@@ -176,8 +176,6 @@
 /* Advertisement Section */
 .advertisement-section {
     width: 100%;
-    background: rgba(28, 28, 28, 0.7); /* Match the background of the info cards */
-    color: #fff;
     padding: 20px;
     margin-top: 40px;
     display: flex;
