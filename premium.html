@@ -5,24 +5,24 @@
     <meta id="viewport" name="viewport">
 
     <script type="text/javascript">
-    //mobile viewport hack
+    // Mobile viewport hack
     (function(){
       function apply_viewport(){
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)   ) {
           var ww = window.screen.width;
-          var mw = 800; // min width of site
-          var ratio =  ww / mw; //calculate ratio
+          var mw = 800; // Min width of site
+          var ratio =  ww / mw; // Calculate ratio
           var viewport_meta_tag = document.getElementById('viewport');
-          if( ww < mw){ //smaller than minimum size
+          if( ww < mw){ // Smaller than minimum size
             viewport_meta_tag.setAttribute('content', 'initial-scale=' + ratio + ', maximum-scale=' + ratio + ', minimum-scale=' + ratio + ', user-scalable=no, width=' + mw);
           }
-          else { //regular size
+          else { // Regular size
             viewport_meta_tag.setAttribute('content', 'initial-scale=1.0, maximum-scale=1, minimum-scale=1.0, user-scalable=yes, width=' + ww);
           }
         }
       }
 
-      //ok, i need to update viewport scale if screen dimensions changed
+      // Update viewport scale if screen dimensions changed
       window.addEventListener('resize', function(){
         apply_viewport();
       });
@@ -36,7 +36,7 @@
     <link rel="icon" href="icons/16x16.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="icons/16x16.png">
 
-    <!-- Stylesheet -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="premium.css">
 </head>
@@ -85,7 +85,7 @@
                         <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
                     </ul>
                 </div>
-                <a class="purchase-btn" data-sellix-product="66a156f93bb7b">Choose Plan</a>
+                <a class="purchase-btn" href="#" data-sellix-product="66a156f93bb7b">Choose Plan</a>
             </div>
 
             <!-- Yearly Plan -->
@@ -109,7 +109,7 @@
                         <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
                     </ul>
                 </div>
-                <a class="purchase-btn" data-sellix-product="66a156fdc690e">Choose Plan</a>
+                <a class="purchase-btn" href="#" data-sellix-product="66a156fdc690e">Choose Plan</a>
             </div>
 
             <!-- Lifetime Plan -->
@@ -133,7 +133,7 @@
                         <li><img src="blue-dot.png" alt="Blue Dot"> Free Setup Assistance</li>
                     </ul>
                 </div>
-                <a class="purchase-btn" data-sellix-product="66a1571ce3e20">Choose Plan</a>
+                <a class="purchase-btn" href="#" data-sellix-product="66a1571ce3e20">Choose Plan</a>
             </div>
         </div>
 
